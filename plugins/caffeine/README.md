@@ -1,4 +1,4 @@
-# RevealCaffeine
+# ☕️ Caffeine
 
 > Custom plugin for [Reveal.js](https://revealjs.com/) to avoid screen going to sleep during active presentations
 
