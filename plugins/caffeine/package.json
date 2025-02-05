@@ -1,6 +1,6 @@
 {
   "name": "@forward-software/reveal.js-caffeine",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Custom plugin for Reveal.js to avoid screen going to sleep during active presentations",
   "author": "ForWarD Software (https://forwardsoftware.solutions/)",
   "license": "MIT",
