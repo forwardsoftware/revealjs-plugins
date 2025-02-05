@@ -1,0 +1,47 @@
+{
+  "name": "@forward-software/reveal.js-caffeine",
+  "version": "1.0.0",
+  "description": "Custom plugin for Reveal.js to avoid screen going to sleep during active presentations",
+  "author": "ForWarD Software (https://forwardsoftware.solutions/)",
+  "license": "MIT",
+  "keywords": [
+    "revealjs",
+    "reveal-js",
+    "reveal-plugin",
+    "reveal-js-plugin",
+    "caffeine",
+    "wakelock"
+  ],
+  "homepage": "https://github.com/forwardsoftware/revealjs-plugins/tree/main/plugins/caffeine#readme",
+  "bugs": "https://github.com/forwardsoftware/revealjs-plugins/issues",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/forwardsoftware/revealjs-plugins.git",
+    "directory": "plugins/caffeine"
+  },
+  "main": "dist/plugin.js",
+  "module": "dist/plugin.esm.js",
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "clean": "gulp clean",
+    "watch": "gulp watch",
+    "build": "gulp build"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.26.7",
+    "@babel/preset-env": "^7.26.7",
+    "@rollup/plugin-babel": "^6.0.4",
+    "@rollup/plugin-commonjs": "^28.0.2",
+    "@rollup/plugin-node-resolve": "^16.0.0",
+    "@rollup/plugin-strip": "^3.0.4",
+    "@rollup/plugin-terser": "^0.4.4",
+    "gulp": "^5.0.0",
+    "rimraf": "^6.0.1",
+    "rollup": "^4.34.3"
+  }
+}
