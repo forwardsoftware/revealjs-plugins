@@ -25,7 +25,7 @@ jobs:
         run: pnpm i --frozen-lockfile
 
       - name: Publish package ${{ github.event.release.name }}
-        if: contains(github.event.release.name, 'caffeine')
+        if: contains(github.event.release.name, 'reveal.js-caffeine')
         run: pnpm publish --filter '@forward-software/reveal.js-caffeine' --access public --provenance
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
