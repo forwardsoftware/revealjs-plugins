@@ -1,0 +1,31 @@
+name: Publish Package to npmjs
+
+on:
+  release:
+    types: [published]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: read
+      id-token: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup NodeJS
+        uses: actions/setup-node@v4
+        with:
+          registry-url: "https://registry.npmjs.org"
+
+      - name: Install dependencies
+        run: pnpm i --frozen-lockfile
+
+      - name: Publish package ${{ github.event.release.name }}
+        if: contains(github.event.release.name, 'caffeine')
+        run: pnpm publish --filter '@forward-software/reveal.js-caffeine' --access public --provenance
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
