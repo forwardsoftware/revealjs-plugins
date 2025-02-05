@@ -1,6 +1,5 @@
 {
   "name": "revealjs-plugins",
-  "version": "1.0.0",
   "description": "Custom plugins for reveal.js HTML presentation framework.",
   "author": "ForWarD Software (https://forwardsoftware.solutions/)",
   "license": "MIT",
