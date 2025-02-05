@@ -34,3 +34,7 @@ caffeine: {
 ## License
 
 MIT
+
+---
+
+Made with ✨ & ❤️ by [ForWarD Software](https://github.com/forwardsoftware) and [contributors](https://github.com/forwardsoftware/revealjs-plugins/graphs/contributors)
