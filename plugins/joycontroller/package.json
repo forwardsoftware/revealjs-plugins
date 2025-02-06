@@ -1,0 +1,43 @@
+{
+  "name": "@forward-software/reveal.js-joycontroller",
+  "version": "1.0.0",
+  "description": "Custom plugin for Reveal.js to control presentations using Nintendo Switch Joy-Cons",
+  "author": "ForWarD Software (https://forwardsoftware.solutions/)",
+  "license": "MIT",
+  "keywords": [
+    "revealjs",
+    "reveal-js",
+    "reveal-plugin",
+    "reveal-js-plugin",
+    "joy-cons"
+  ],
+  "homepage": "https://github.com/forwardsoftware/revealjs-plugins/tree/main/plugins/joycontroller#readme",
+  "bugs": "https://github.com/forwardsoftware/revealjs-plugins/issues",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/forwardsoftware/revealjs-plugins.git",
+    "directory": "plugins/joycontroller"
+  },
+  "main": "dist/plugin.js",
+  "module": "dist/plugin.esm.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "clean": "gulp clean",
+    "watch": "gulp watch",
+    "build": "gulp build"
+  },
+  "devDependencies": {
+    "@babel/core": "catalog:",
+    "@babel/preset-env": "catalog:",
+    "@rollup/plugin-babel": "catalog:",
+    "@rollup/plugin-commonjs": "catalog:",
+    "@rollup/plugin-node-resolve": "catalog:",
+    "@rollup/plugin-strip": "catalog:",
+    "@rollup/plugin-terser": "catalog:",
+    "gulp": "catalog:",
+    "rimraf": "catalog:",
+    "rollup": "catalog:"
+  }
+}
