@@ -10,8 +10,16 @@ updates:
     directory: "/"
     schedule:
       interval: weekly
+    reviewers:
+      - "panz3r"
 
   - package-ecosystem: "npm"
     directory: "/"
     schedule:
       interval: daily
+    groups:
+      babel:
+        patterns:
+          - "@babel/*"
+    reviewers:
+      - "panz3r"
