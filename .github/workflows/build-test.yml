@@ -1,0 +1,25 @@
+name: Build & Test
+
+on: [push]
+
+jobs:
+  build:
+    name: Build packages
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup NodeJS
+        uses: actions/setup-node@v4
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+
+      - name: Install dependencies
+        run: pnpm i --frozen-lockfile
+
+      - name: Build packages
+        run: pnpm -r build
