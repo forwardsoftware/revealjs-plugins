@@ -9,14 +9,15 @@ updates:
   - package-ecosystem: "devcontainers"
     directory: "/"
     schedule:
-      interval: weekly
+      interval: monthly
     reviewers:
       - "panz3r"
 
   - package-ecosystem: "npm"
     directory: "/"
     schedule:
-      interval: daily
+      interval: weekly
+      day: tuesday
     groups:
       babel:
         patterns:
