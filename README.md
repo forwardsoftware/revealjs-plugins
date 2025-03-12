@@ -4,10 +4,11 @@ This repository contains a collection of custom plugins for [Reveal.js](https://
 
 ## Plugins
 
-| Plugin                                    | Description                                                               |
-| ----------------------------------------- | ------------------------------------------------------------------------- |
-| [☕️ Caffeine](plugins/caffeine)          | Custom plugin to avoid screen going to sleep during active presentations. |
+| Plugin                                   | Description                                                               |
+| ---------------------------------------- | ------------------------------------------------------------------------- |
+| [☕️ Caffeine](plugins/caffeine)           | Custom plugin to avoid screen going to sleep during active presentations. |
 | [🎮 JoyController](plugins/joycontroller) | Custom plugin to control presentations using Nintendo Switch Joy-Cons.    |
+| [🔳 QR Codes](plugins/qrcodes)            | Custom plugin to show QR Codes by adding a single class to HTML elements. |
 
 ---
 
