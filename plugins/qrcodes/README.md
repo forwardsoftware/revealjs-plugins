@@ -1,0 +1,70 @@
+# 🔳 QR Codes
+
+> Custom plugin for [Reveal.js](https://revealjs.com/) to show QR Codes by adding a single class to HTML elements.
+
+## How To
+
+Simply include `RevealQRCodes` plugin
+
+```js
+Reveal.initialize({
+  // ...
+  plugins: [
+    // ...,
+    RevealQRCodes,
+  ],
+});
+```
+And add the required class and data attributes to HTML elements you'd like to turn into QR Codes
+
+```html
+
+<a href="https://example.com/" class="qrcode" data-size=500>example.com</a>
+
+```
+
+## Configuration
+
+### Global Configuration
+
+You can configure the plugin with the following options:
+
+```js
+// ...
+plugins: [ /* ... */ ],
+qrcodes: {
+    selector: ".qrcode",
+    size: 256,
+    colorDark: "#000000",
+    colorLight: "#ffffff",
+    correctionLevel: 2
+}
+```
+
+| Name              | Type   | Description                                                                                                                                             | Default        |
+| ----------------- | ------ | ------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------- |
+| `selector`        | String | CSS selector to use when searching HTML elements to render as QR Codes                                                                                  | `".qrcode"`    |
+| `size`            | Number | Default size (Width and Height) to render QR Codes                                                                                                      | `256`          |
+| `colorDark`       | String | Color to use for "dark" segments of QR Codes                                                                                                            | `"#000000"`    |
+| `colorLight`      | String | Color to use for "light" segments  of QR Codes                                                                                                          | `"#ffffff"`    |
+| `correctionLevel` | Number | Correction level to include in the generated QR Codes. Follows this schema: `1` for `"Low"`, `0` for `"Medium"`, `3` for `"Quartile"`, `2` for `"High"` | `2` (`"High"`) |
+
+
+### HTML Element Configuration
+
+You can customize each QR Code by applying to a specific HTML element the following data attributes
+
+| Name                    | Default                                                                |
+| ----------------------- | ---------------------------------------------------------------------- |
+| `data-size`             | see `size` in [Global Configuration](#global-configuration)            |
+| `data-color-dark`       | see `colorDark` in [Global Configuration](#global-configuration)       |
+| `data-color-light`      | see `colorLight` in [Global Configuration](#global-configuration)      |
+| `data-correction-level` | see `correctionLevel` in [Global Configuration](#global-configuration) |
+
+## License
+
+MIT
+
+---
+
+Made with ✨ & ❤️ by [ForWarD Software](https://github.com/forwardsoftware) and [contributors](https://github.com/forwardsoftware/revealjs-plugins/graphs/contributors)
