@@ -27,6 +27,11 @@
 		"ghcr.io/joshuanianji/devcontainer-features/mount-pnpm-store:1": {}
 	},
 
+	// Volumes to mount
+	"mounts": [
+		"source=${devcontainerId}-node_modules,target=${containerWorkspaceFolder}/node_modules,type=volume"
+	],
+
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	// "forwardPorts": [],
 
