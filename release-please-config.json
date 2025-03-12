@@ -5,6 +5,7 @@
   "always-update": true,
   "packages": {
     "plugins/caffeine": {},
-    "plugins/joycontroller": {}
+    "plugins/joycontroller": {},
+    "plugins/qrcodes": {}
   }
 }
