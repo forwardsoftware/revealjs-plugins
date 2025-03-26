@@ -20,7 +20,7 @@ const Plugin = () => {
 
       function renderQRCodes() {
         document.querySelectorAll(config.selector).forEach(function (el) {
-          console.info("🔳 %s found", el.tagName, el);
+          console.info("🔳 QR Code found as '%s' element:", el.tagName, el);
 
           new QRCode({
             element: el,
