@@ -6,6 +6,7 @@ const DEFAULT_CONFIGURATION = {
   colorDark: "#000000",
   colorLight: "#ffffff",
   correctionLevel: 2,
+  configurations: {},
 };
 
 const Plugin = () => {
@@ -22,14 +23,31 @@ const Plugin = () => {
         document.querySelectorAll(config.selector).forEach(function (el) {
           console.info("🔳 QR Code found as '%s' element:", el.tagName, el);
 
-          new QRCode({
-            element: el,
+          let elementConfiguration = {
             text: el.dataset.text || el.href,
-            width: el.dataset.size || config.size,
-            height: el.dataset.size || config.size,
+            size: el.dataset.size || config.size,
             colorDark: el.dataset.colorDark || config.colorDark,
             colorLight: el.dataset.colorLight || config.colorLight,
-            correctLevel: el.dataset.correctionLevel || config.correctionLevel,
+            correctionLevel: el.dataset.correctionLevel || config.correctionLevel,
+          };
+
+          if (config.configurations[el.id]) {
+            elementConfiguration = {
+              ...elementConfiguration,
+              ...config.configurations[el.id],
+            };
+          }
+
+          console.debug("🔳 QR Code generating using configuration:", elementConfiguration);
+
+          new QRCode({
+            element: el,
+            text: elementConfiguration.text,
+            width: elementConfiguration.size,
+            height: elementConfiguration.size,
+            colorDark: elementConfiguration.colorDark,
+            colorLight: elementConfiguration.colorLight,
+            correctLevel: elementConfiguration.correctionLevel,
           });
         });
       }
