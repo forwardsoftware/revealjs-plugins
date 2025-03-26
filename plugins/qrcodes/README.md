@@ -19,7 +19,7 @@ And add the required class and data attributes to HTML elements you'd like to tu
 
 ```html
 
-<a href="https://example.com/" class="qrcode" data-size=500>example.com</a>
+<a href="https://example.com/" class="qrcode" data-size=500></a>
 
 ```
 
@@ -54,12 +54,34 @@ qrcodes: {
 
 You can customize each QR Code by applying to a specific HTML element the following data attributes
 
-| Name                    | Default                                                                |
-| ----------------------- | ---------------------------------------------------------------------- |
-| `data-size`             | see `size` in [Global Configuration](#global-configuration)            |
-| `data-color-dark`       | see `colorDark` in [Global Configuration](#global-configuration)       |
-| `data-color-light`      | see `colorLight` in [Global Configuration](#global-configuration)      |
-| `data-correction-level` | see `correctionLevel` in [Global Configuration](#global-configuration) |
+| Name                    | Default                                                                                                              |
+| ----------------------- | -------------------------------------------------------------------------------------------------------------------- |
+| `data-text`             | QR Code content to be rendered, if not set the plugin will use the `href` attribute value (if available) as content. |
+| `data-size`             | see `size` in [Global Configuration](#global-configuration)                                                          |
+| `data-color-dark`       | see `colorDark` in [Global Configuration](#global-configuration)                                                     |
+| `data-color-light`      | see `colorLight` in [Global Configuration](#global-configuration)                                                    |
+| `data-correction-level` | see `correctionLevel` in [Global Configuration](#global-configuration)                                               |
+
+
+> [!TIP]
+> The generated QR Code will contain the value of the `data-text` data attribute or fallback to the `href` attribute one.
+
+## Tips
+
+### QR Code size
+
+Since [Reveal.js](https://revealjs.com/) will add constraints to `max-width` and `max-height` through CSS for `img`, we suggest adding the following class to revert this behaviour for QR Code images
+
+```css
+.qrcode img {
+  max-width: 100%;
+  max-height: 100%;
+}
+```
+
+> [!NOTE]
+> Change `.qrcode` selector with the class you chose as `selector` in [Global Configuration](#global-configuration)
+
 
 ## License
 
