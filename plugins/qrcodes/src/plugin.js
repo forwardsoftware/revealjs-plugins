@@ -24,7 +24,7 @@ const Plugin = () => {
 
           new QRCode({
             element: el,
-            text: el.textContent,
+            text: el.dataset.text || el.href,
             width: el.dataset.size || config.size,
             height: el.dataset.size || config.size,
             colorDark: el.dataset.colorDark || config.colorDark,
