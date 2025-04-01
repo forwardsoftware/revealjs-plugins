@@ -1,11 +1,11 @@
-import QRCode from "qrcodets";
+import { QRCode, HTMLRenderer } from "@forward-software/qrcodets";
 
 const DEFAULT_CONFIGURATION = {
   selector: ".qrcode",
   size: 256,
   colorDark: "#000000",
   colorLight: "#ffffff",
-  correctionLevel: 2,
+  correctionLevel: "H",
   configurations: {},
 };
 
@@ -40,15 +40,14 @@ const Plugin = () => {
 
           console.debug("🔳 QR Code generating using configuration:", elementConfiguration);
 
-          new QRCode({
-            element: el,
-            text: elementConfiguration.text,
-            width: elementConfiguration.size,
-            height: elementConfiguration.size,
-            colorDark: elementConfiguration.colorDark,
-            colorLight: elementConfiguration.colorLight,
-            correctLevel: elementConfiguration.correctionLevel,
-          });
+          QRCode.from(elementConfiguration.text)
+            .withOptions({
+              size: elementConfiguration.size,
+              colorDark: elementConfiguration.colorDark,
+              colorLight: elementConfiguration.colorLight,
+              correctionLevel: elementConfiguration.correctionLevel,
+            })
+            .renderTo(HTMLRenderer(el));
         });
       }
 
