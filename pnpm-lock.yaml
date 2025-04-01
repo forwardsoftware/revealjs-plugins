@@ -109,9 +109,9 @@ importers:
 
   plugins/qrcodes:
     dependencies:
-      qrcodets:
-        specifier: ^1.0.4
-        version: 1.0.4
+      '@forward-software/qrcodets':
+        specifier: ^1.0.0
+        version: 1.0.0
     devDependencies:
       '@babel/core':
         specifier: 'catalog:'
@@ -634,6 +634,9 @@ packages:
   '@babel/types@7.26.10':
     resolution: {integrity: sha512-emqcG3vHrpxUKTrxcblR36dcrcoRDvKmnL/dCL6ZsHaShW80qxCAcNhzQZrpeM765VzEos+xOi4s+r4IXzTwdQ==}
     engines: {node: '>=6.9.0'}
+
+  '@forward-software/qrcodets@1.0.0':
+    resolution: {integrity: sha512-qmNUlqxDFL4Uk+feNYppgzrcAIu9pj1wNGt4L/icAGO8efJ/ah2qCyr6K2a3Qp7LBVKpQAQBSG6V9OPD6+IEBg==}
 
   '@gulpjs/messages@1.1.0':
     resolution: {integrity: sha512-Ys9sazDatyTgZVb4xPlDufLweJ/Os2uHWOv+Caxvy2O85JcnT4M3vc73bi8pdLWlv3fdWQz3pdI9tVwo8rQQSg==}
@@ -1383,9 +1386,6 @@ packages:
   picomatch@4.0.2:
     resolution: {integrity: sha512-M7BAV6Rlcy5u+m6oPhAPFgJTzAioX/6B0DxyvDlo9l8+T3nLKbrczg2WLUyzd45L8RqfUMyGPzekbMvX2Ldkwg==}
     engines: {node: '>=12'}
-
-  qrcodets@1.0.4:
-    resolution: {integrity: sha512-tazSDb0mcFBJmiIIYo6FVBPldmhvSOFyi7IWLnkzu7PSA+f1F7RAUqnBKsBJNqU6iHpj8dfmr5uBpnSw8yOT3A==}
 
   randombytes@2.1.0:
     resolution: {integrity: sha512-vYl3iOX+4CKUWuxGi9Ukhie6fsqXqS9FE2Zaic4tNFD2N2QQaXOMFbuKK4QmDHC0JO6B1Zp41J0LpT0oR68amQ==}
@@ -2311,6 +2311,8 @@ snapshots:
       '@babel/helper-string-parser': 7.25.9
       '@babel/helper-validator-identifier': 7.25.9
 
+  '@forward-software/qrcodets@1.0.0': {}
+
   '@gulpjs/messages@1.1.0': {}
 
   '@gulpjs/to-absolute-glob@4.0.0':
@@ -2985,8 +2987,6 @@ snapshots:
   picomatch@2.3.1: {}
 
   picomatch@4.0.2: {}
-
-  qrcodets@1.0.4: {}
 
   randombytes@2.1.0:
     dependencies:

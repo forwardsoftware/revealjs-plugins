@@ -37,18 +37,18 @@ qrcodes: {
     size: 256,
     colorDark: "#000000",
     colorLight: "#ffffff",
-    correctionLevel: 2
+    correctionLevel: "H"
 }
 ```
 
-| Name              | Type                                | Description                                                                                                                                             | Default        |
-| ----------------- | ----------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------- |
-| `selector`        | String                              | CSS selector to use when searching HTML elements to render as QR Codes                                                                                  | `".qrcode"`    |
-| `size`            | Number                              | Default size (Width and Height) to render QR Codes                                                                                                      | `256`          |
-| `colorDark`       | String                              | Color to use for "dark" segments of QR Codes                                                                                                            | `"#000000"`    |
-| `colorLight`      | String                              | Color to use for "light" segments  of QR Codes                                                                                                          | `"#ffffff"`    |
-| `correctionLevel` | Number                              | Correction level to include in the generated QR Codes. Follows this schema: `1` for `"Low"`, `0` for `"Medium"`, `3` for `"Quartile"`, `2` for `"High"` | `2` (`"High"`) |
-| `configurations`  | Record<String, QRCodeConfiguration> | An object containing keyed custom configurations for specific QR Codes.                                                                                 | `{}`           |
+| Name              | Type                                | Description                                                                                                                                                     | Default     |
+| ----------------- | ----------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------- |
+| `selector`        | String                              | CSS selector to use when searching HTML elements to render as QR Codes                                                                                          | `".qrcode"` |
+| `size`            | Number                              | Default size (Width and Height) to render QR Codes                                                                                                              | `256`       |
+| `colorDark`       | String                              | Color to use for "dark" segments of QR Codes                                                                                                                    | `"#000000"` |
+| `colorLight`      | String                              | Color to use for "light" segments  of QR Codes                                                                                                                  | `"#ffffff"` |
+| `correctionLevel` | String                              | Correction level to include in the generated QR Codes. Follows this schema: `"L"` for `"Low"`, `"M"` for `"Medium"`, `"Q"` for `"Quartile"`, `"H"` for `"High"` | `"H"`       |
+| `configurations`  | Record<String, QRCodeConfiguration> | An object containing keyed custom configurations for specific QR Codes.                                                                                         | `{}`        |
 
 ### QR Code Configuration
 
