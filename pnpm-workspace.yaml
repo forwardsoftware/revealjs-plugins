@@ -1,8 +1,8 @@
 packages:
   - plugins/*
 catalog:
-  "@babel/core": ^7.26.10
-  "@babel/preset-env": ^7.26.9
+  "@babel/core": ^7.27.1
+  "@babel/preset-env": ^7.27.2
   "@rollup/plugin-babel": ^6.0.4
   "@rollup/plugin-commonjs": ^28.0.3
   "@rollup/plugin-node-resolve": ^16.0.1
@@ -10,4 +10,4 @@ catalog:
   "@rollup/plugin-terser": ^0.4.4
   gulp: ^5.0.0
   rimraf: ^6.0.1
-  rollup: ^4.38.0
+  rollup: ^4.40.2
