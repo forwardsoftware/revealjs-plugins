@@ -1,0 +1,16 @@
+# Each line is a file pattern followed by one or more owners.
+
+# These owners will be the default owners for everything in
+# the repo. Unless a later match takes precedence,
+# @panz3r will be requested for review when someone 
+# opens a pull request.
+*       @panz3r
+
+# Owners of the 'caffeine' plugin
+/plugins/caffeine         @panz3r
+
+# Owners of the 'joycontroller' plugin
+/plugins/joycontroller    @panz3r
+
+# Owners of the 'qrcodes' plugin
+/plugins/qrcodes          @panz3r
