@@ -2,10 +2,12 @@ name: Build & Test
 
 on: [push]
 
+permissions:
+  contents: read
+
 jobs:
   build:
     name: Build packages
-
     runs-on: ubuntu-latest
 
     steps:
