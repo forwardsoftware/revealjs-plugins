@@ -5,6 +5,8 @@ on: [push]
 jobs:
   build:
     name: Build packages
+    permissions:
+      contents: read
 
     runs-on: ubuntu-latest
 
