@@ -16,9 +16,6 @@ const babelConfig = {
     [
       "@babel/preset-env",
       {
-        corejs: 3,
-        useBuiltIns: "usage",
-        modules: false,
         targets: {
           browsers: [
             "last 2 Chrome versions",
