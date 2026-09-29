@@ -34,6 +34,10 @@ joycon: {
 
 Inspired by [Firnael/reveal.js-joycon-plugin](https://github.com/Firnael/reveal.js-joycon-plugin)
 
+## Changelog
+
+Release notes for every version are published on the [GitHub Releases](https://github.com/forwardsoftware/revealjs-plugins/releases?q=reveal.js-joycontroller&expanded=true) page.
+
 ## License
 
 MIT
