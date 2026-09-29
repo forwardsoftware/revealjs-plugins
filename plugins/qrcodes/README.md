@@ -131,6 +131,9 @@ Since [Reveal.js](https://revealjs.com/) will add constraints to `max-width` and
 > [!NOTE]
 > Change `.qrcode` selector with the class you chose as `selector` in [Global Configuration](#global-configuration)
 
+## Changelog
+
+Release notes for every version are published on the [GitHub Releases](https://github.com/forwardsoftware/revealjs-plugins/releases?q=reveal.js-qrcodes&expanded=true) page.
 
 ## License
 

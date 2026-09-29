@@ -1,5 +1,7 @@
 # Changelog
 
+> This file is no longer updated. Release notes for newer versions are published on the [GitHub Releases](https://github.com/forwardsoftware/revealjs-plugins/releases?q=reveal.js-qrcodes&expanded=true) page.
+
 ## [1.1.0](https://github.com/forwardsoftware/revealjs-plugins/compare/reveal.js-qrcodes-v1.0.0...reveal.js-qrcodes-v1.1.0) (2025-04-01)
 
 

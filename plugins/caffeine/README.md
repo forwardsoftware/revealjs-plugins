@@ -31,6 +31,10 @@ caffeine: {
 }
 ```
 
+## Changelog
+
+Release notes for every version are published on the [GitHub Releases](https://github.com/forwardsoftware/revealjs-plugins/releases?q=reveal.js-caffeine&expanded=true) page.
+
 ## License
 
 MIT
