@@ -41,6 +41,6 @@
     "rollup": "catalog:"
   },
   "dependencies": {
-    "@forward-software/qrcodets": "^1.0.0"
+    "@forward-software/qrcodets": "^1.0.1"
   }
 }
