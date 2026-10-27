@@ -268,8 +268,8 @@ importers:
   plugins/qrcodes:
     dependencies:
       '@forward-software/qrcodets':
-        specifier: ^1.0.2
-        version: 1.0.2
+        specifier: ^1.0.3
+        version: 1.0.3
     devDependencies:
       '@babel/core':
         specifier: 'catalog:'
@@ -834,8 +834,8 @@ packages:
     resolution: {integrity: sha512-iXSSZAKQWmaeAwGtFw10v9fg5hUiUs0L+w+Z2K11kym3pDNK+SF0VcAQPsEFvWcTSZ7LMgClMXDBvTbH0IlICg==}
     engines: {node: ^22.18.0 || >=24.11.0}
 
-  '@forward-software/qrcodets@1.0.2':
-    resolution: {integrity: sha512-H5kQUEuq0fbEdsdEgLzH9IuCp+iKPrLN1GluRUFC0j942Uro23oF0huOz7Ghg5AQky7CfcDedf4Fq1JA5sx8Jg==}
+  '@forward-software/qrcodets@1.0.3':
+    resolution: {integrity: sha512-pFOY+rjQQanctmKmdvRio55eUGT2sW5XuIJ8najnq8BQTlq6+pwyF9AIQkpyZZkntYvB0O7ljVfC+fP5Yxrs2A==}
 
   '@gulpjs/messages@1.1.0':
     resolution: {integrity: sha512-Ys9sazDatyTgZVb4xPlDufLweJ/Os2uHWOv+Caxvy2O85JcnT4M3vc73bi8pdLWlv3fdWQz3pdI9tVwo8rQQSg==}
@@ -2492,7 +2492,7 @@ snapshots:
       '@babel/helper-string-parser': 8.0.8
       '@babel/helper-validator-identifier': 8.0.6
 
-  '@forward-software/qrcodets@1.0.2': {}
+  '@forward-software/qrcodets@1.0.3': {}
 
   '@gulpjs/messages@1.1.0': {}
 
