@@ -16,10 +16,11 @@ updates:
     schedule:
       interval: monthly
 
+  # pnpm workspace: scanning the root covers all workspace packages (plugins/*)
+  # and the shared catalog/lockfile. Listing plugin directories too causes
+  # duplicated PRs for the same update.
   - package-ecosystem: "npm"
-    directories:
-      - "/"
-      - "/plugins/*"
+    directory: "/"
     schedule:
       interval: weekly
       day: tuesday
